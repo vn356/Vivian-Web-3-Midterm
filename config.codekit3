@@ -124,19 +124,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/main\/penguinarrticle5.jpeg" : {
-      "ft" : 16384,
-      "iS" : 78865,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/main\/penguinarrticle5.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/main\/penguinarticle1.png" : {
       "ft" : 32768,
       "iS" : 554422,
@@ -185,6 +172,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/main\/penguinarticle5.jpeg" : {
+      "ft" : 16384,
+      "iS" : 78865,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/main\/penguinarticle5.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
