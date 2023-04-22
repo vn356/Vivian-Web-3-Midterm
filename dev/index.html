@@ -9,20 +9,27 @@
     <title>Penguin Network</title>
   </head>
 
-  <body>
+  <body class="background">
 
 <!---HEADER -->
 
-  <header>
-      <img src="img/icon/pn.svg" alt="logo" width="200px" height="200px">
+  <header class="header">
+    <div class="container">
+      <div class="content">
+        <img src="img/icon/pn.svg" alt="logo" width="150px" height="150px">
+      </div>
+    </div>
   </header>
 
 <!---SEARCH BAR-->
-<section>
-   <div>
-    <form action="#">
-      <input type="text" placholder="Finding a penguin...">
-      <button><img src="img/icon/searchicon.svg" alt="search icon"></button>
+<section class="background-white">
+   <div class="container">
+      <div class="content">
+        <form action="#">
+          <input type="text" placholder="Finding a penguin...">
+          
+          <button><img src="img/icon/searchicon.svg" alt="search icon"></button>
+      </div>
     </div>
 </section>
 
@@ -53,20 +60,23 @@
 </section>
 
 <!-- MIDDLE BARS-->
-<section>
-  <div>
-    <h4>Penguin Facts</h4>
-    <button type="button">Learn More</button>
-  </div>
-  
-  <img src="img/main/penguincircle1.jpeg" alt="penguin shouting">
+<section class="container">
+  <div class="content">
 
-  <div>
-    <h4>Penguin Care</h4>
-    <button type="button">Learn More</button>
-  </div>
-  
-  <img src="img/main/penguincircle2.jpeg" alt="blank faced penguin">
+    <div>
+      <h4>Penguin Facts</h4>
+      <button type="button">Learn More</button>
+    </div>
+    
+    <img src="img/main/penguincircle1.jpeg" alt="penguin shouting">
+
+    <div>
+      <h4>Penguin Care</h4>
+      <button type="button">Learn More</button>
+    </div>
+    
+    <img src="img/main/penguincircle2.jpeg" alt="blank faced penguin">
+</div>
 </section>
 
 <!--- MAIN IMAGES-->
@@ -86,60 +96,66 @@
 </section>
 
 <!--- ARTICLE SECTION-->
-<h2>Popular Penguin Articles</h2>
-  <ul>
-    <li>
-      <img src="img/main/penguinarticle1.png" alt="the tallest penguin">
-        <div>
-          <h4>The Tallest Penguin</h4>
-          <p>The ancient mega-penguins waddled around New Zealand some 60 million years ago</p>
-          <button type="button">Read More</button>
-        </div>
-     </li>
-
-
-    <li>
-      <img src="img/main/penguinarticle2.jpeg" alt="penguin call">
-        <div>
-          <h4>Scientists Decode African Penguin Calls</h4>
-          <p>Researchers are trying to figure out how "jackass" penguins—nicknamed for their braying vocalizations—communicate</p>
-         <button type="button">Read More</button>
-        </div>
-    </li>
- 
-
-    <li>
-     <img src="img/main/penguinarticle3.png" alt="penguin colony">
-       <div>
-          <h4>A Penguin Colony's Rise and Fall</h4>
-           <p>A nearby volcano has decimated the gentoo colony on Ardley Island three times</p>
-           <button type="button">Read More</button>
-         </div>
-       </li>
-
-     <li>
-       <img src="img/main/penguinarticle4.png" alt="penguin fossil">
-         <div>
-           <h4>Fossils of a 340-Pound Giant Penguin</h4>
-          <p>Paleontologists unearthed the bones of two new penguin species that lived 50 million years ago</p>
-          <button type="button">Read More</button>
-        </div>
-      </li>
-      
+<section>
+  <div class="container">
+    <div class="content">
+  <h2>Popular Penguin Articles</h2>
+</div>
+</div>
+    <ul>
       <li>
-       <img src="img/main/penguinarticle5.jpeg" alt="yellow penguin">
-        <div>
-         <h4>Rare Yellow Penguin Sighted</h4>
-         <p>The Antarctic bird has leucism, meaning its feathers do not contain melanin needed to produce black pigment</p>
-         <button type="button">Read More</button>
-        </div>
+        <img src="img/main/penguinarticle1.png" alt="the tallest penguin">
+          <div>
+            <h4>The Tallest Penguin</h4>
+            <p>The ancient mega-penguins waddled around New Zealand some 60 million years ago</p>
+            <button type="button">Read More</button>
+          </div>
       </li>
-  </ul>
+
+
+      <li>
+        <img src="img/main/penguinarticle2.jpeg" alt="penguin call">
+          <div>
+            <h4>Scientists Decode African Penguin Calls</h4>
+            <p>Researchers are trying to figure out how "jackass" penguins—nicknamed for their braying vocalizations—communicate</p>
+          <button type="button">Read More</button>
+          </div>
+      </li>
+  
+
+      <li>
+      <img src="img/main/penguinarticle3.png" alt="penguin colony">
+        <div>
+            <h4>A Penguin Colony's Rise and Fall</h4>
+            <p>A nearby volcano has decimated the gentoo colony on Ardley Island three times</p>
+            <button type="button">Read More</button>
+          </div>
+        </li>
+
+      <li>
+        <img src="img/main/penguinarticle4.png" alt="penguin fossil">
+          <div>
+            <h4>Fossils of a 340-Pound Giant Penguin</h4>
+            <p>Paleontologists unearthed the bones of two new penguin species that lived 50 million years ago</p>
+            <button type="button">Read More</button>
+          </div>
+        </li>
+        
+        <li class="background-tan">
+        <img class="large-images" src="img/main/penguinarticle5.jpeg" alt="yellow penguin">
+          <div>
+          <h4>Rare Yellow Penguin Sighted</h4>
+          <p>The Antarctic bird has leucism, meaning its feathers do not contain melanin needed to produce black pigment</p>
+          <button type="button">Read More</button>
+          </div>
+        </li>
+    </ul>
+  </section>
 
 
 <!---FOOTER-->
 <footer>
-  <h3>Our Penguin Mascots</h3>
+  <h3 class="h3">Our Penguin Mascots</h3>
     <div>
         <li>Greg
           <ul>
