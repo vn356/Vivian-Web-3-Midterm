@@ -372,6 +372,8 @@ template {
   object-position: 95% 100%;
   border-color: #FFFFFF;
   border-style: solid;
+  width: 85px;
+  height: 85px;
 }
 
 .section-middle {
@@ -468,6 +470,8 @@ template {
 }
 
 .icon {
+  width: 25px;
+  height: 25px;
   margin-top: 8px;
   margin-bottom: 8px;
   margin-right: 8px;
@@ -489,6 +493,11 @@ template {
   margin-left: 16px;
   margin-right: 16px;
   position: absolute;
+}
+
+.pn {
+  width: 150px;
+  height: 150px;
 }
 
 /* =============
