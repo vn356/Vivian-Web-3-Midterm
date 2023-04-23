@@ -356,24 +356,65 @@ template {
   background-color: #895656;
 }
 
+.article {
+  background-color: #DFD3C3;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+}
+
 /* =============
     Typography
 ============= */
-.h3 {
+.h2 {
   color: #DFD3C3;
   font-family: "Oxygen", sans-serif;
   font-size: 20px;
+  font-weight: bold;
 }
 
-.name {
+.penguin-name {
   color: #E0DFD5;
   font-family: "Oxygen", sans-serif;
   font-size: 16px;
+  font-weight: bold;
+}
+
+.article-name {
+  color: #000000;
+  font-family: "Oxygen", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.article-text {
+  color: #2B3A55;
+  font-family: "Oxygen", sans-serif;
+  font-size: 16px;
+}
+
+.text {
+  color: #FFFFFF;
+  font-family: "Oxygen", sans-serif;
+  font-size: 12px;
 }
 
 /* =============
     Buttons
 ============= */
+.button {
+  background-color: #FFCD89;
+  color: #000000;
+  padding: 10px 24px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Oxygen", sans-serif;
+  font-size: 14px;
+}
+
 /* =============
     Forms
 ============= */
@@ -406,3 +447,11 @@ textarea {
 /* =============
     Footer
 ============= */
+.footer {
+  background-color: #895656;
+  margin-top: 24px;
+  margin-right: 16px;
+  margin-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
