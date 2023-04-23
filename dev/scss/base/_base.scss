@@ -47,3 +47,21 @@
     padding-bottom: 16px;
     padding-left: 0px;
 }
+
+.round-img{
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: 95% 100%;
+    border-color:#FFFFFF;
+    border-style: solid;
+}
+
+.section-middle{
+    background-color: #895656;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
