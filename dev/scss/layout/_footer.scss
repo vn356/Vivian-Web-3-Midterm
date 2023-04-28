@@ -11,3 +11,31 @@
     padding-bottom: 16px;
 
 }
+
+.right{
+    position: absolute;
+    left: 71%;
+
+
+}
+
+
+.footers{
+    
+    ul{
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include lg{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include xl{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

@@ -38,39 +38,43 @@
     background-color: #895656;
 }
 
-.article{
-    background-color: #DFD3C3;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 16px;
-    padding-left: 0px;
+
+
+ 
+
+
+
+body{
+    background-color: red;
 }
 
-.round-img{
-    border-radius: 50px;
-    object-fit: cover;
-    object-position: 95% 100%;
-    border-color:#FFFFFF;
-    border-style: solid;
-    width: 85px;
-    height: 85px;
+
+@include sm{
+body{
+    background-color: green;
+}   
 }
 
-.section-middle{
-    background-color: #895656;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding-top: 16px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+@include md{
+body{
+    background-color: purple;
+}
 }
 
-.right{
-    position: absolute;
-    left: 71%;
+@include lg{
+body{
+    background-color: indianred;
+}
+}
 
+@include xl{
+    body{
+        background-color: peru;
+}
+}
 
+@include xxl{
+     body{
+        background-color: blue;
+}
 }

@@ -1,0 +1,38 @@
+/* =============
+    Middle Bars
+============= */
+
+
+.round-img{
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: 95% 100%;
+    border-color:#FFFFFF;
+    border-style: solid;
+    width: 85px;
+    height: 85px;
+}
+
+
+
+.section-middle{
+    background-color: #895656;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+
+.middle{
+
+    &.container{
+
+        @include md{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+    }
+}
