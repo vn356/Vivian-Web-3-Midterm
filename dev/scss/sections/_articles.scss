@@ -22,16 +22,16 @@
             display: grid;
             grid-template-columns: (4 repeat 1fr);
             grid-template-areas: 
-            "a1 a1 a2 a2
-            a3 a3 a4 a4
-            a1 a5 a5 a1"
+            "a1 a1 a2 a2"
+            "a3 a3 a4 a4"
+            ". a5 a5 ."
             ;
 
             .tall{
                 grid-area: a1;
             }
 
-            .calls{
+            .call{
                 grid-area: a2;
             }
 
@@ -56,13 +56,37 @@
         }
 
         @include lg{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: 
-            " ";
+        
         }
 
+
         @include xl{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "a1 a1 a2 a2 a3 a3"
+            ". a4 a4 a5 a5 ."
+            ;
+
+            .tall{
+                grid-area: a1;
+            }
+
+            .call{
+                grid-area: a2;
+            }
+
+            .rise{
+                grid-area: a3;
+            }
+
+            .fossil{
+                grid-area: a4;
+            }
+
+            .rare{
+                grid-area: a5;
+            }
 
         }
 

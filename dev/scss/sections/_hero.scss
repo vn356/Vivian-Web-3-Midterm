@@ -3,13 +3,13 @@
 ============= */
 
 
-.under-hero{
+.infopage{
     
     @include md{
         display: grid;
         grid-template-columns: repeat(3 1fr);
         grid-template-areas: 
-        "uh1 uh2 uh2 ";
+        "uh1 uh2 uh2";
 
         .trending{
             grid-area: uh1;
@@ -24,7 +24,18 @@
 
     @include lg{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+        "uh1 uh2";
+
+        .trending{
+            grid-area: uh1;
+        }
+
+        .shelter{
+            grid-area: uh2;
+        }
+  
   
         
     }
