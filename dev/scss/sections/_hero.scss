@@ -56,3 +56,74 @@
 
 
 }
+
+
+
+//CENTER IMAGES//
+
+
+.center{
+    
+    @include md{
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-areas: 
+        " ce1 ce1 ce2 ce2";
+
+        .swim{
+            grid-area: ce1;
+        }
+
+        .three{
+            grid-area: ce2;
+        }
+  
+    
+    }
+
+    @include lg{
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-areas: 
+        " ce1 ce1 ce2 ce2";
+
+        .swim{
+            grid-area: ce1;
+        }
+
+        .three{
+            grid-area: ce2;
+        }
+  
+  
+  
+        
+    }
+
+    @include xl{
+        display: grid;
+        grid-template-columns: repeat(5 1fr);
+        grid-template-areas: 
+        " ce1 ce1 ce1 ce2 ce2";
+
+        .swim{
+            grid-area: ce1;
+        }
+
+        .three{
+            grid-area: ce2;
+        }
+  
+  
+        
+    }
+
+    @include xxl{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+  
+        
+    }
+
+
+}

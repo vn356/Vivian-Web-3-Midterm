@@ -541,52 +541,44 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .footer .content {
+  .bottom {
     display: grid;
     grid-template-columns: repeat(2 1fr);
-    grid-template-areas: "m1 m4" "m2 m5" "m3 .";
+    grid-template-areas: "m1 m2";
   }
-  .footer .content .mascot1 {
+  .bottom .greg {
     grid-area: m1;
   }
-  .footer .content .mascot2 {
+  .bottom .info {
     grid-area: m2;
-  }
-  .footer .content .mascot3 {
-    grid-area: m3;
-  }
-  .footer .content .info1 {
-    grid-area: m4;
-  }
-  .footer .content .info2 {
-    grid-area: m5;
   }
 }
 @media (min-width: 992px) {
-  .footer .content {
+  .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "m1 m4 m5" "m2 . ." "m3 . .";
   }
 }
 @media (min-width: 1200px) {
-  .footer .content {
+  .bottom {
     display: grid;
     grid-template-columns: repeat(3 1fr);
     grid-template-areas: "m1 m4 m5" "m2 . ." "m3 . .";
   }
-  .footer .content .mascot1 {
+  .bottom .greg {
     grid-area: m1;
   }
-  .footer .content .mascot2 {
+  .bottom .sir {
     grid-area: m2;
   }
-  .footer .content .mascot3 {
+  .bottom .bingo {
     grid-area: m3;
   }
-  .footer .content .info1 {
+  .bottom .signup {
     grid-area: m4;
   }
-  .footer .content .info2 {
+  .bottom .follow {
     grid-area: m5;
   }
 }
@@ -692,6 +684,52 @@ textarea {
   }
 }
 
+@media (min-width: 768px) {
+  .center {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: " ce1 ce1 ce2 ce2";
+  }
+  .center .swim {
+    grid-area: ce1;
+  }
+  .center .three {
+    grid-area: ce2;
+  }
+}
+@media (min-width: 992px) {
+  .center {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: " ce1 ce1 ce2 ce2";
+  }
+  .center .swim {
+    grid-area: ce1;
+  }
+  .center .three {
+    grid-area: ce2;
+  }
+}
+@media (min-width: 1200px) {
+  .center {
+    display: grid;
+    grid-template-columns: repeat(5 1fr);
+    grid-template-areas: " ce1 ce1 ce1 ce2 ce2";
+  }
+  .center .swim {
+    grid-area: ce1;
+  }
+  .center .three {
+    grid-area: ce2;
+  }
+}
+@media (min-width: 1400px) {
+  .center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* =============
     Middle Bars
 ============= */
@@ -716,7 +754,14 @@ textarea {
 @media (min-width: 768px) {
   .middle.container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: "f1 f1 f2 f2";
+  }
+  .middle.container .facts {
+    grid-area: f1;
+  }
+  .middle.container .care {
+    grid-area: f2;
   }
 }
 
