@@ -544,41 +544,65 @@ textarea {
   .bottom {
     display: grid;
     grid-template-columns: repeat(2 1fr);
-    grid-template-areas: "m1 m2";
+    grid-template-areas: "m1 m2" "m3 m4" "m5 .";
   }
   .bottom .greg {
     grid-area: m1;
   }
-  .bottom .info {
+  .bottom .signup {
     grid-area: m2;
+  }
+  .bottom .sir {
+    grid-area: m3;
+  }
+  .bottom .follow {
+    grid-area: m4;
+  }
+  .bottom .bingo {
+    grid-area: m5;
   }
 }
 @media (min-width: 992px) {
   .bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "m1 m4 m5" "m2 . ." "m3 . .";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: "m1 m2" "m3 m4" "m5 .";
+  }
+  .bottom .greg {
+    grid-area: m1;
+  }
+  .bottom .signup {
+    grid-area: m2;
+  }
+  .bottom .sir {
+    grid-area: m3;
+  }
+  .bottom .follow {
+    grid-area: m4;
+  }
+  .bottom .bingo {
+    grid-area: m5;
   }
 }
 @media (min-width: 1200px) {
   .bottom {
     display: grid;
     grid-template-columns: repeat(3 1fr);
-    grid-template-areas: "m1 m4 m5" "m2 . ." "m3 . .";
+    grid-template-areas: "m1 m2 m4" "m3 . ." "m5 . .";
   }
   .bottom .greg {
     grid-area: m1;
   }
-  .bottom .sir {
+  .bottom .signup {
     grid-area: m2;
   }
-  .bottom .bingo {
+  .bottom .sir {
     grid-area: m3;
   }
-  .bottom .signup {
+  .bottom .follow {
     grid-area: m4;
   }
-  .bottom .follow {
+  .bottom .bingo {
     grid-area: m5;
   }
 }
