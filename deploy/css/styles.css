@@ -477,7 +477,7 @@ body {
   margin-top: 16px;
   margin-bottom: 16px;
   color: #895656;
-  width: auto;
+  width: max-content;
   border-bottom: 2px solid #895656;
 }
 
@@ -672,8 +672,8 @@ textarea {
 @media (min-width: 768px) {
   .infopage {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-areas: "uh1 uh2 uh2";
+    grid-template-columns: repeat(5 1fr);
+    grid-template-areas: "uh1 uh1 uh2 uh2 uh2";
   }
   .infopage .trending {
     grid-area: uh1;
@@ -776,19 +776,44 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .middle.container {
+  .middle {
     display: grid;
     grid-template-columns: repeat(4 1fr);
     grid-template-areas: "f1 f1 f2 f2";
   }
-  .middle.container .facts {
+  .middle .facts {
     grid-area: f1;
   }
-  .middle.container .care {
+  .middle .care {
     grid-area: f2;
   }
 }
-
+@media (min-width: 992px) {
+  .middle {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: "f1 f1 f2 f2";
+  }
+  .middle .facts {
+    grid-area: f1;
+  }
+  .middle .care {
+    grid-area: f2;
+  }
+}
+@media (min-width: 1200px) {
+  .middle {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-areas: "f1 f1 f2 f2";
+  }
+  .middle .facts {
+    grid-area: f1;
+  }
+  .middle .care {
+    grid-area: f2;
+  }
+}
 .row {
   display: grid;
   grid-template-columns: auto auto;

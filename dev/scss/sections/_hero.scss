@@ -7,9 +7,9 @@
     
     @include md{
         display: grid;
-        grid-template-columns: repeat(3 1fr);
+        grid-template-columns: repeat(5 1fr);
         grid-template-areas: 
-        "uh1 uh2 uh2";
+        "uh1 uh1 uh2 uh2 uh2";
 
         .trending{
             grid-area: uh1;

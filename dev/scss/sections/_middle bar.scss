@@ -27,10 +27,9 @@
 
 .middle{
 
-    &.container{
 
         @include md{
-            display:grid;
+            display: grid;
             grid-template-columns: repeat(4 1fr);
             grid-template-areas: 
             "f1 f1 f2 f2"
@@ -46,7 +45,47 @@
 
 
         }
-    }
+
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(4 1fr);
+            grid-template-areas: 
+            "f1 f1 f2 f2"
+            ;
+
+            .facts{
+                grid-area: f1;
+            }
+
+            .care{
+                grid-area: f2;
+            }
+
+        }
+
+
+        @include xl{
+            display: grid;
+            grid-template-columns: repeat(4 1fr);
+            grid-template-areas: 
+            "f1 f1 f2 f2"
+            ;
+
+            .facts{
+                grid-area: f1;
+            }
+
+            .care{
+                grid-area: f2;
+            }
+
+        }
+
+        @include xxl{
+          
+
+        }
+    
 }
 
 
