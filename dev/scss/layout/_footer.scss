@@ -3,12 +3,8 @@
 ============= */
 
 .footer{
-    background-color: #895656;
-    margin-top: 24px;
-    margin-right: 16px;
-    margin-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    background-color: $red;
+    padding: 16px 0px 32px 0px;
 
 }
 
@@ -21,7 +17,7 @@
 
 
 .bottom{
-
+     
     
         @include md{
             display: grid;

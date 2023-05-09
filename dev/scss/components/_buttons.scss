@@ -4,13 +4,13 @@
 
 
 .button{
-    background-color: #FFCD89;
-    color: #000000;
-    padding: 10px 24px;
+    background-color: $yellow;
+    color: $black;
+    padding: 8px;
     text-align: center;
-    display: inline-block;
     font-family:"Oxygen", sans-serif;
     font-size: 14px;
+    width: fit-content;
 }
 
 .input{
@@ -30,25 +30,9 @@
     margin-right: 8px;
 }
 
-.search{
-    background-color: #FFFFFF;
-    padding: 16px 16px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    color: #895656;
-    width: max-content;
-    border-bottom: 2px solid #895656;
-}
 
 
 
-.search-icon{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 16px;
-    margin-right: 16px;
-    position: absolute;
-}
 
 .pn{
     width: 150px;

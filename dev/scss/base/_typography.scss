@@ -5,53 +5,55 @@
 
 
 .h2{
-    color: #DFD3C3;
+    color: $tan;
     font-family:"Oxygen", sans-serif;
     font-size: 20px;
     font-weight: bold;
+    margin: 16px 0px;
 }
 
 .penguin-name{
-    color: #E0DFD5;
+    color: $off-white;
     font-family:"Oxygen", sans-serif;
     font-size: 16px;
     font-weight: bold;
+    margin: 16px 0px;
 }
 
 .article-name{
-    color: #000000;
+    color: $black;
     font-family:"Oxygen", sans-serif;
     font-size: 27px;
     font-weight: bold;
 }
 
 .article-text{
-    color: #2B3A55;
+    color: $blue;
     font-family:"Oxygen", sans-serif;
     font-size: 16px;
 }
 
 .text{
-    color: #FFFFFF;
+    color: $white;
     font-family:"Oxygen", sans-serif;
     font-size: 12px;
 }
 
 .h4{
-    color: #F8EDE3;
+    color: $off-white;
     font-family:"Oxygen", sans-serif;
     font-size: 22px;
 }
 
 .penguin18{
-    color: #2B3A55;
+    color: $blue;
     font-family:"Oxygen", sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
 
 .penguin16{
-    color: #2B3A55;
+    color: $blue;
     font-family:"Oxygen", sans-serif;
     font-size: 16px;
     font-weight: bold;

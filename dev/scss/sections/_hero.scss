@@ -4,19 +4,78 @@
 
 
 .infopage{
+
+    .trending{
+        background-color: $tan;
+        padding: 16px 16px ;
+    }
+
+    .shelter{
+        background-color: $dark-tan;
+        padding: 16px 16px 24px;
+    }
     
+
+
+
+   
+
+
+
     @include md{
         display: grid;
-        grid-template-columns: repeat(5 1fr);
+        grid-template-columns: repeat(3 1fr);
         grid-template-areas: 
-        "uh1 uh1 uh2 uh2 uh2";
+        "uh1 uh2  uh2";
 
         .trending{
             grid-area: uh1;
+            background-color: $tan;
+            padding: 16px 16px ;
+            display: grid;
+            grid-template-columns: repeat (2 1fr);
+            grid-template-areas: 
+            "pt1 pt3"
+            "pt2 pt3"
+            ;
+
+                .penguin18{
+                    grid-area: pt1;
+                }
+
+                .penguin16{
+                    grid-area: pt2;
+                }
+
+                .chevron{
+                    grid-area: pt3;
+                }
+            
+            
         }
 
         .shelter{
             grid-area: uh2;
+            background-color: $dark-tan;
+            padding: 16px 16px 16px;
+            display: grid;
+            grid-template-columns: repeat (2 1fr);
+            grid-template-areas: 
+            "pt1 pt3"
+            "pt2 pt3"
+            ;
+
+                .penguin18{
+                    grid-area: pt1;
+                }
+
+                .penguin16{
+                    grid-area: pt2;
+                }
+
+                .chevron{
+                    grid-area: pt3;
+                }
         }
   
     
@@ -30,10 +89,12 @@
 
         .trending{
             grid-area: uh1;
+            background-color: $tan;
         }
 
         .shelter{
             grid-area: uh2;
+            background-color: $dark-tan;
         }
   
   
@@ -63,7 +124,8 @@
 
 
 .center{
-    
+
+  
     @include md{
         display: grid;
         grid-template-columns: repeat(4 1fr);
@@ -72,10 +134,16 @@
 
         .swim{
             grid-area: ce1;
+            height: 594px;
         }
 
         .three{
             grid-area: ce2;
+            height: 594px;
+        }
+
+        .four{
+            display:none;
         }
   
     
@@ -93,6 +161,10 @@
 
         .three{
             grid-area: ce2;
+        }
+
+        .four{
+            display:none;
         }
   
   
@@ -113,14 +185,33 @@
         .three{
             grid-area: ce2;
         }
-  
+        
+        .four{
+            display:none;
+        }
   
         
     }
 
     @include xxl{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(6 1fr);
+        grid-template-areas: 
+        " ce1 ce1 ce1 ce1 ce2 ce2"
+        " ce1 ce1 ce1 ce1 ce3 ce3"
+        ;
+
+        .swim{
+            grid-area: ce1;
+        }
+
+        .three{
+            grid-area: ce2;
+        }
+        
+        .four{
+            grid-area: ce3;
+        }
   
         
     }
