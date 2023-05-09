@@ -8,19 +8,54 @@
     .trending{
         background-color: $tan;
         padding: 16px 16px ;
+        display: grid;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-areas: 
+        "pt1 pt3"
+        "pt2 pt3"
+        ;
+
+            .penguin18{
+                grid-area: pt1;
+            }
+
+            .penguin16{
+                grid-area: pt2;
+            }
+
+            .chevron{
+                grid-area: pt3;
+            }
     }
 
     .shelter{
-        background-color: $dark-tan;
-        padding: 16px 16px 24px;
+            background-color: $dark-tan;
+            padding: 16px 16px 16px;
+            display: grid;
+            grid-template-columns: repeat (2 1fr);
+            grid-template-areas: 
+            "pt1 pt3"
+            "pt2 pt3"
+            ;
+
+                .penguin18{
+                    grid-area: pt1;
+                }
+
+                .penguin16{
+                    grid-area: pt2;
+                }
+
+                .chevron{
+                    grid-area: pt3;
+                }
     }
     
 
 
 
+
    
-
-
 
     @include md{
         display: grid;

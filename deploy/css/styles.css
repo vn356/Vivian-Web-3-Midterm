@@ -363,12 +363,11 @@ template {
 
 ul li {
   list-style: none;
+  margin-bottom: 8px;
 }
 
-a {
-  padding: 0;
-  text-decoration: none;
-  color: #000;
+hr {
+  margin: 16px 0px 16px 0px;
 }
 
 body {
@@ -458,6 +457,17 @@ body {
   font-weight: bold;
 }
 
+a {
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -469,6 +479,8 @@ body {
   font-family: "Oxygen", sans-serif;
   font-size: 14px;
   width: fit-content;
+  height: auto;
+  margin-top: 24px;
 }
 
 .input {
@@ -617,6 +629,15 @@ textarea {
     grid-area: m5;
   }
 }
+@media (min-width: 1400px) {
+  .bottom {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .bottom .popular-penguin {
+    margin-left: 80px;
+  }
+}
 
 /* =============
     Articles
@@ -677,6 +698,13 @@ textarea {
     grid-area: a5;
   }
 }
+@media (min-width: 1400px) {
+  .articles ul {
+    margin-left: 88px;
+    margin-right: 88px;
+  }
+}
+
 .article-box {
   padding: 8px 8px 16px 8px;
 }
@@ -687,10 +715,34 @@ textarea {
 .infopage .trending {
   background-color: #DFD3C3;
   padding: 16px 16px;
+  display: grid;
+  grid-template-columns: repeat 2 1fr;
+  grid-template-areas: "pt1 pt3" "pt2 pt3";
+}
+.infopage .trending .penguin18 {
+  grid-area: pt1;
+}
+.infopage .trending .penguin16 {
+  grid-area: pt2;
+}
+.infopage .trending .chevron {
+  grid-area: pt3;
 }
 .infopage .shelter {
   background-color: #D0B8A8;
-  padding: 16px 16px 24px;
+  padding: 16px 16px 16px;
+  display: grid;
+  grid-template-columns: repeat 2 1fr;
+  grid-template-areas: "pt1 pt3" "pt2 pt3";
+}
+.infopage .shelter .penguin18 {
+  grid-area: pt1;
+}
+.infopage .shelter .penguin16 {
+  grid-area: pt2;
+}
+.infopage .shelter .chevron {
+  grid-area: pt3;
 }
 @media (min-width: 768px) {
   .infopage {
@@ -844,8 +896,9 @@ textarea {
 
 .section-middle {
   background-color: #895656;
-  margin: 16px 24px 0px 8px;
   padding: 16px 16px 8px 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -859,6 +912,9 @@ textarea {
   }
   .middle .care {
     grid-area: f2;
+  }
+  .middle .section-middle {
+    margin-right: 16px;
   }
 }
 @media (min-width: 992px) {
@@ -887,6 +943,15 @@ textarea {
     grid-area: f2;
   }
 }
+@media (min-width: 1400px) {
+  .middle .facts {
+    margin-left: 88px;
+  }
+  .middle .care {
+    margin-right: 88px;
+  }
+}
+
 .bars {
   display: grid;
   grid-template-columns: repeat(2 1fr);

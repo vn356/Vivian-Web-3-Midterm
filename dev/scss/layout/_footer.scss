@@ -114,4 +114,15 @@
 
 
         }
+
+        @include xxl{
+          margin-left: 80px;
+          margin-right: 80px;
+
+               .popular-penguin{
+                    margin-left: 80px;
+               }
+
+      }
     }
+
