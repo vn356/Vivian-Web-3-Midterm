@@ -527,19 +527,47 @@ textarea {
     Navigation
 ============= */
 .search {
-  background-color: white;
-  padding: 16px 16px;
-  margin: 16px 16px;
+  margin: 24px 0px 24px 0px;
+}
+.search .content form {
+  display: flex;
+}
+.search .content form input {
   color: #895656;
+  font-family: "Oxygen", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border: none;
   border-bottom: 2px solid #895656;
 }
-
-.search-icon {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-  position: absolute;
+@media (min-width: 768px) {
+  .search .content form input {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .search .content form input {
+    font-size: 35px;
+  }
+}
+.search .content form ::placeholder {
+  color: #895656;
+  opacity: 1;
+}
+.search .content form ::-ms-input-placeholder {
+  color: #895656;
+}
+.search .content form button {
+  background-color: #895656;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  padding: 4px 8px 4px 8px;
+}
+@media (min-width: 768px) {
+  .search .content form button {
+    padding: 12px 16px 12 16px;
+  }
 }
 
 /* =============
@@ -714,7 +742,7 @@ textarea {
 ============= */
 .infopage .trending {
   background-color: #DFD3C3;
-  padding: 16px 16px;
+  padding: 16px 16px 16px;
   display: grid;
   grid-template-columns: repeat 2 1fr;
   grid-template-areas: "pt1 pt3" "pt2 pt3";
@@ -727,6 +755,11 @@ textarea {
 }
 .infopage .trending .chevron {
   grid-area: pt3;
+  justify-self: end;
+}
+.infopage .trending .detail {
+  display: none;
+  justify-self: end;
 }
 .infopage .shelter {
   background-color: #D0B8A8;
@@ -743,6 +776,11 @@ textarea {
 }
 .infopage .shelter .chevron {
   grid-area: pt3;
+  justify-self: end;
+}
+.infopage .shelter .detail {
+  display: none;
+  justify-self: end;
 }
 @media (min-width: 768px) {
   .infopage {
@@ -767,6 +805,9 @@ textarea {
   .infopage .trending .chevron {
     grid-area: pt3;
   }
+  .infopage .trending .detail {
+    display: none;
+  }
   .infopage .shelter {
     grid-area: uh2;
     background-color: #D0B8A8;
@@ -784,6 +825,9 @@ textarea {
   .infopage .shelter .chevron {
     grid-area: pt3;
   }
+  .infopage .shelter .detail {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .infopage {
@@ -795,15 +839,35 @@ textarea {
     grid-area: uh1;
     background-color: #DFD3C3;
   }
+  .infopage .trending .detail {
+    display: initial;
+  }
   .infopage .shelter {
     grid-area: uh2;
     background-color: #D0B8A8;
+  }
+  .infopage .shelter .detail {
+    display: initial;
   }
 }
 @media (min-width: 1200px) {
   .infopage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .infopage .trending {
+    grid-area: uh1;
+    background-color: #DFD3C3;
+  }
+  .infopage .trending .detail {
+    display: initial;
+  }
+  .infopage .shelter {
+    grid-area: uh2;
+    background-color: #D0B8A8;
+  }
+  .infopage .shelter .detail {
+    display: initial;
   }
 }
 @media (min-width: 1400px) {
@@ -813,6 +877,11 @@ textarea {
   }
 }
 
+@media (min-width: 576px) {
+  .center .four {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .center {
     display: grid;
@@ -866,8 +935,8 @@ textarea {
 @media (min-width: 1400px) {
   .center {
     display: grid;
-    grid-template-columns: repeat(6 1fr);
-    grid-template-areas: " ce1 ce1 ce1 ce1 ce2 ce2" " ce1 ce1 ce1 ce1 ce3 ce3";
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas: " ce1 ce1 ce2" " ce1 ce1 ce3";
   }
   .center .swim {
     grid-area: ce1;
@@ -891,7 +960,7 @@ textarea {
   border-style: solid;
   width: 85px;
   height: 85px;
-  justify-content: right;
+  justify-content: end;
 }
 
 .section-middle {
@@ -963,6 +1032,7 @@ textarea {
 }
 .bars .round {
   grid-area: l2;
+  justify-self: end;
 }
 .bars .buttons {
   grid-area: l3;

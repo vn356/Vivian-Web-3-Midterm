@@ -11,7 +11,7 @@
     border-style: solid;
     width: 85px;
     height: 85px;
-    justify-content: right;
+    justify-content: end;
 }
 
 
@@ -26,6 +26,7 @@
 
 .middle{
 
+   
 
         @include md{
             display: grid;
@@ -46,6 +47,9 @@
             .section-middle{
                 margin-right: 16px;
             }
+
+
+          
 
         }
 
@@ -112,6 +116,7 @@
 
     .round{
         grid-area: l2;
+        justify-self: end;
     }
 
     .buttons{

@@ -5,9 +5,11 @@
 
 .infopage{
 
+    
+
     .trending{
         background-color: $tan;
-        padding: 16px 16px ;
+        padding: 16px 16px 16px;
         display: grid;
         grid-template-columns: repeat (2 1fr);
         grid-template-areas: 
@@ -25,6 +27,12 @@
 
             .chevron{
                 grid-area: pt3;
+                justify-self: end;
+            }
+
+            .detail{
+                display:none;
+                justify-self: end;
             }
     }
 
@@ -48,6 +56,12 @@
 
                 .chevron{
                     grid-area: pt3;
+                    justify-self: end;
+                }
+
+                .detail{
+                    display:none;
+                    justify-self: end;
                 }
     }
     
@@ -86,6 +100,10 @@
                     grid-area: pt3;
                 }
             
+
+                .detail{
+                    display:none;
+                }
             
         }
 
@@ -111,6 +129,11 @@
                 .chevron{
                     grid-area: pt3;
                 }
+
+
+                .detail{
+                    display:none;
+                }
         }
   
     
@@ -125,11 +148,21 @@
         .trending{
             grid-area: uh1;
             background-color: $tan;
+
+            .detail{
+                display:initial;
+            }
+      
         }
 
         .shelter{
             grid-area: uh2;
             background-color: $dark-tan;
+
+            .detail{
+                display:initial;
+            }
+      
         }
   
   
@@ -139,7 +172,27 @@
     @include xl{
         display: grid;
         grid-template-columns: 1fr 1fr;
-  
+
+        .trending{
+            grid-area: uh1;
+            background-color: $tan;
+
+            .detail{
+                display:initial;
+            }
+      
+        }
+
+        .shelter{
+            grid-area: uh2;
+            background-color: $dark-tan;
+
+            .detail{
+                display:initial;
+               
+            }
+      
+        }
         
     }
 
@@ -160,7 +213,14 @@
 
 .center{
 
-  
+   @include sm{
+    
+        .four{
+            display: none;
+        }
+   }
+
+
     @include md{
         display: grid;
         grid-template-columns: repeat(4 1fr);
@@ -230,10 +290,10 @@
 
     @include xxl{
         display: grid;
-        grid-template-columns: repeat(6 1fr);
+        grid-template-columns: repeat(3 1fr);
         grid-template-areas: 
-        " ce1 ce1 ce1 ce1 ce2 ce2"
-        " ce1 ce1 ce1 ce1 ce3 ce3"
+        " ce1 ce1 ce2"
+        " ce1 ce1 ce3"
         ;
 
         .swim{
