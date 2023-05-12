@@ -4,6 +4,7 @@
 
 .large-images{
     width: 100%;
+    display: block;
 }
 
 .container{
@@ -19,23 +20,23 @@
 }
 
 .background{
-    background-color:#5B4848;
+    background-color: $bg-color;
 }
 
 .background-white{
-    background-color:white;
+    background-color: $white;
 }
 
 .background-tan{
-    background-color: #DFD3C3;
+    background-color: $tan;
 }
 
 .background-darktan{
-    background-color: #D0B8A8;
+    background-color: $dark-tan;
 }
 
 .background-red{
-    background-color: #895656;
+    background-color: $red;
 }
 
 

@@ -5,7 +5,35 @@
 
 .infopage{
 
-    
+    .penguin18{
+        
+        @include lg{
+            font-size: 25px;
+        }
+    }
+
+    .detail{
+
+        @include lg{
+            font-family:"Oxygen", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: $blue;
+        }        
+    }
+
+
+    .chevron{
+        margin: 24px
+    }
+
+
+    .icon{
+        margin: 0;
+        vertical-align: text-bottom;
+
+
+    }
 
     .trending{
         background-color: $tan;
@@ -213,17 +241,15 @@
 
 .center{
 
-   @include sm{
-    
         .four{
             display: none;
         }
-   }
-
+ 
+    
 
     @include md{
         display: grid;
-        grid-template-columns: repeat(4 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
         " ce1 ce1 ce2 ce2";
 
@@ -246,7 +272,7 @@
 
     @include lg{
         display: grid;
-        grid-template-columns: repeat(4 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
         " ce1 ce1 ce2 ce2";
 
@@ -269,7 +295,7 @@
 
     @include xl{
         display: grid;
-        grid-template-columns: repeat(5 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-template-areas: 
         " ce1 ce1 ce1 ce2 ce2";
 
@@ -290,10 +316,10 @@
 
     @include xxl{
         display: grid;
-        grid-template-columns: repeat(3 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
-        " ce1 ce1 ce2"
-        " ce1 ce1 ce3"
+        " ce1 ce2"
+        " ce1 ce3"
         ;
 
         .swim{
@@ -306,6 +332,7 @@
         
         .four{
             grid-area: ce3;
+            display: initial;
         }
   
         

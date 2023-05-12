@@ -8,19 +8,67 @@
 
 }
 
-.right{
-    position: absolute;
-    left: 71%;
 
-
-}
 
 
 .bottom{
+
+
+     li{
+          
      
+
+
+          .icon{
+               margin: 0;
+               padding: 0;
+               padding: 4px;
+              
+          }
+          .text{
+            margin: 12px;
+          }
+     }
+
+
+     .content{
+          margin-top: 24px;
+     .signup{
+         
+          form{
+            
+               input{
+                    color: $blue;
+                    font-family:"Oxygen", sans-serif;
+                    font-size: 14px;
+                    
+
+                    border: none;
+               
+
+
+                }
+
+                .signup-button{
+                    background-color: $yellow;
+                    font-family:"Oxygen", sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: none;
+                    
+                    padding: 8px 12px 8px 12px;
+                    justify-content: end;
+                    
+                }
+
+               
+          }
+     }
+}
     
         @include md{
             display: grid;
+            grid-column-gap: 12px;
             grid-template-columns: repeat(2 1fr);
             grid-template-areas: 
             "m1 m2"
@@ -55,6 +103,7 @@
 
         @include lg{
             display: grid;
+            grid-column-gap: 24px;
             grid-template-columns: repeat(2 1fr);
             grid-template-areas: 
             "m1 m2"
@@ -106,6 +155,7 @@
 
            .follow{
                 grid-area: m4;
+              
            }
 
            .bingo{

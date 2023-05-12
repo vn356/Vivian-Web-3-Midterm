@@ -15,6 +15,34 @@
 
 
 .articles{
+    
+
+    margin-top: 12px;
+    margin-bottom: 32px;
+    
+
+
+   h2{
+        margin-left: 16px;
+        font-family:"Oxygen", sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+
+    @include md{
+        font-size: 28px;
+        font-weight: normal;
+    }   
+
+    @include lg{
+        font-size: 37px;
+        font-weight: light;
+    }
+    
+    @include xxl{
+        margin-left: 88px;
+        margin-right: 88px;
+    }
+   }
      
     ul{
 

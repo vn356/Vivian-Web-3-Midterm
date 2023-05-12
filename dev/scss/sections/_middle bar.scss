@@ -7,11 +7,22 @@
     border-radius: 50px;
     object-fit: cover;
     object-position: 95% 100%;
-    border-color:#FFFFFF;
+    border-color: $white;
     border-style: solid;
+    border-width: 4px;
     width: 85px;
     height: 85px;
     justify-content: end;
+
+    @include md{
+        width: 114px;
+        height: 114px;
+        border-radius: 90px;
+        border-width: 8px;
+
+    }
+
+
 }
 
 
@@ -26,7 +37,19 @@
 
 .middle{
 
-   
+    .h4{
+        color: $off-white;
+        font-family:"Oxygen", sans-serif;
+        font-size: 22px;
+
+        @include md{
+            font-size: 29px;
+        }
+
+        @include lg{
+            font-size: 31px;
+        }
+    }
 
         @include md{
             display: grid;
@@ -121,8 +144,30 @@
 
     .buttons{
         grid-area: l3;
+        width: fit-content;
+        padding: 16px;
+
     }
   
     padding: 16px;
+
+
+
+    @include md{
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+
+    @include lg{
+        padding: 36px;
+        margin-bottom: 48px;
+    }
+
+
+    @include xl{
+
+        padding: 36px;
+        margin-bottom: 48px;
+    }
 }
 
