@@ -13,6 +13,13 @@
     grid-template-areas: 
      ". content ."
     ;
+
+    @include xxl{
+        grid-template-columns: auto 1500px auto;
+        grid-template-areas: 
+         ". content ."
+
+}
 }
 
 .content{
@@ -60,7 +67,6 @@ ul{
 hr{
     margin: 16px 0px 16px 0px;
 }
-
 
 
 

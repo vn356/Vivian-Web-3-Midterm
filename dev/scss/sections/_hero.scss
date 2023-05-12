@@ -39,7 +39,7 @@
         background-color: $tan;
         padding: 16px 16px 16px;
         display: grid;
-        grid-template-columns: repeat (2 1fr);
+        grid-template-columns: repeat (2, 1fr);
         grid-template-areas: 
         "pt1 pt3"
         "pt2 pt3"
@@ -68,7 +68,7 @@
             background-color: $dark-tan;
             padding: 16px 16px 16px;
             display: grid;
-            grid-template-columns: repeat (2 1fr);
+            grid-template-columns: repeat (2, 1fr);
             grid-template-areas: 
             "pt1 pt3"
             "pt2 pt3"
@@ -101,7 +101,7 @@
 
     @include md{
         display: grid;
-        grid-template-columns: repeat(3 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
         "uh1 uh2  uh2";
 
@@ -110,7 +110,7 @@
             background-color: $tan;
             padding: 16px 16px ;
             display: grid;
-            grid-template-columns: repeat (2 1fr);
+            grid-template-columns: repeat (2, 1fr);
             grid-template-areas: 
             "pt1 pt3"
             "pt2 pt3"
@@ -140,7 +140,7 @@
             background-color: $dark-tan;
             padding: 16px 16px 16px;
             display: grid;
-            grid-template-columns: repeat (2 1fr);
+            grid-template-columns: repeat (2, 1fr);
             grid-template-areas: 
             "pt1 pt3"
             "pt2 pt3"
@@ -169,7 +169,7 @@
 
     @include lg{
         display: grid;
-        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "uh1 uh2";
 
@@ -208,6 +208,8 @@
             .detail{
                 display:initial;
             }
+
+
       
         }
 
@@ -227,6 +229,33 @@
     @include xxl{
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        .trending{
+            grid-area: uh1;
+            background-color: $tan;
+            
+
+            
+
+            .detail{
+                display:initial;
+                grid-area: pen2;
+            }
+
+
+      
+        }
+
+        .shelter{
+            grid-area: uh2;
+            background-color: $dark-tan;
+
+            .detail{
+                display:initial;
+               
+            }
+      
+        }
   
         
     }

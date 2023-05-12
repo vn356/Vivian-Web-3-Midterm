@@ -332,6 +332,12 @@ template {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
 }
+@media (min-width: 1400px) {
+  .container {
+    grid-template-columns: auto 1500px auto;
+    grid-template-areas: ". content .";
+  }
+}
 
 .content {
   grid-area: content;
@@ -752,10 +758,11 @@ textarea {
   .articles ul .rare {
     grid-area: a5;
   }
-}
-.articles ul .article {
-  margin-right: 16px;
-  margin-bottom: 16px;
+  .articles ul .article {
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
 }
 @media (min-width: 1200px) {
   .articles ul {
@@ -817,7 +824,7 @@ textarea {
   background-color: #DFD3C3;
   padding: 16px 16px 16px;
   display: grid;
-  grid-template-columns: repeat 2 1fr;
+  grid-template-columns: repeat 2, 1fr;
   grid-template-areas: "pt1 pt3" "pt2 pt3";
 }
 .infopage .trending .penguin18 {
@@ -838,7 +845,7 @@ textarea {
   background-color: #D0B8A8;
   padding: 16px 16px 16px;
   display: grid;
-  grid-template-columns: repeat 2 1fr;
+  grid-template-columns: repeat 2, 1fr;
   grid-template-areas: "pt1 pt3" "pt2 pt3";
 }
 .infopage .shelter .penguin18 {
@@ -858,7 +865,7 @@ textarea {
 @media (min-width: 768px) {
   .infopage {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "uh1 uh2  uh2";
   }
   .infopage .trending {
@@ -866,7 +873,7 @@ textarea {
     background-color: #DFD3C3;
     padding: 16px 16px;
     display: grid;
-    grid-template-columns: repeat 2 1fr;
+    grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "pt1 pt3" "pt2 pt3";
   }
   .infopage .trending .penguin18 {
@@ -886,7 +893,7 @@ textarea {
     background-color: #D0B8A8;
     padding: 16px 16px 16px;
     display: grid;
-    grid-template-columns: repeat 2 1fr;
+    grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "pt1 pt3" "pt2 pt3";
   }
   .infopage .shelter .penguin18 {
@@ -905,7 +912,7 @@ textarea {
 @media (min-width: 992px) {
   .infopage {
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "uh1 uh2";
   }
   .infopage .trending {
@@ -947,6 +954,21 @@ textarea {
   .infopage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .infopage .trending {
+    grid-area: uh1;
+    background-color: #DFD3C3;
+  }
+  .infopage .trending .detail {
+    display: initial;
+    grid-area: pen2;
+  }
+  .infopage .shelter {
+    grid-area: uh2;
+    background-color: #D0B8A8;
+  }
+  .infopage .shelter .detail {
+    display: initial;
   }
 }
 

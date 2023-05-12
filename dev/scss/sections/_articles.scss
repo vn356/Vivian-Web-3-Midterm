@@ -46,6 +46,8 @@
      
     ul{
 
+      
+
         @include md{
             display: grid;
             grid-template-columns: (4 repeat 1fr);
@@ -74,17 +76,19 @@
             .rare{
                 grid-area: a5;
             }
-      
+            
+            .article{
+                margin-right: 16px;
+                margin-left: 16px;
+                margin-bottom: 16px;
+    
+            }
             
         }
-        .article{
-            margin-right: 16px;
-            margin-bottom: 16px;
-
-        }
+        
 
         @include lg{
-        
+            
         }
 
 
