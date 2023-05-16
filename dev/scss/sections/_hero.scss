@@ -240,9 +240,21 @@
             .detail{
                 display:initial;
                 grid-area: pen2;
+                
             }
 
+            .penguin18{
+                display:flex;
+                justify-content: end;
+                
 
+            }
+
+            .penguin16{
+                display:flex;
+                justify-content: end;
+                
+            }
       
         }
 
@@ -250,11 +262,19 @@
             grid-area: uh2;
             background-color: $dark-tan;
 
+            
+
             .detail{
                 display:initial;
+                
                
             }
-      
+
+            .chevron{
+                display: flex;
+                align-items: start;
+            }
+          
         }
   
         
@@ -316,6 +336,11 @@
         .four{
             display:none;
         }
+
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 32px;
+        margin-top: 32px;
   
   
   
@@ -365,10 +390,13 @@
             grid-area: ce3;
             display: initial;
             height: 500px;
-           
 
         }
-  
+
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 48px;
+        margin-top: 48px;
         
     }
 

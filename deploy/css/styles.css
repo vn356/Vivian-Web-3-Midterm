@@ -335,7 +335,7 @@ template {
 @media (min-width: 1400px) {
   .container {
     display: grid;
-    grid-template-columns: auto 1600px auto;
+    grid-template-columns: auto 1400px auto;
     grid-template-areas: ". content .";
   }
 }
@@ -737,12 +737,6 @@ textarea {
     font-weight: light;
   }
 }
-@media (min-width: 1400px) {
-  .articles h2 {
-    margin-left: 88px;
-    margin-right: 88px;
-  }
-}
 @media (min-width: 768px) {
   .articles ul {
     display: grid;
@@ -794,8 +788,7 @@ textarea {
 }
 @media (min-width: 1400px) {
   .articles ul {
-    margin-left: 88px;
-    margin-right: 88px;
+    margin-bottom: 24px;
   }
 }
 
@@ -969,12 +962,24 @@ textarea {
     display: initial;
     grid-area: pen2;
   }
+  .infopage .trending .penguin18 {
+    display: flex;
+    justify-content: end;
+  }
+  .infopage .trending .penguin16 {
+    display: flex;
+    justify-content: end;
+  }
   .infopage .shelter {
     grid-area: uh2;
     background-color: #D0B8A8;
   }
   .infopage .shelter .detail {
     display: initial;
+  }
+  .infopage .shelter .chevron {
+    display: flex;
+    align-items: start;
   }
 }
 
@@ -1004,6 +1009,10 @@ textarea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: " ce1 ce1 ce2 ce2";
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
   }
   .center .swim {
     grid-area: ce1;
@@ -1036,6 +1045,10 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: " ce1 ce2" " ce1 ce3";
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 48px;
+    margin-top: 48px;
   }
   .center .swim {
     grid-area: ce1;
@@ -1118,6 +1131,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "f1 f1 f2 f2";
+    margin-top: 24px;
   }
   .middle .facts {
     grid-area: f1;

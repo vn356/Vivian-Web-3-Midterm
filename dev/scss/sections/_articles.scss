@@ -39,8 +39,7 @@
     }
     
     @include xxl{
-        margin-left: 88px;
-        margin-right: 88px;
+       
     }
    }
      
@@ -123,8 +122,8 @@
         }
 
         @include xxl{
-            margin-left: 88px;
-            margin-right: 88px;
+            margin-bottom: 24px;
+            
         }
     }
 }
