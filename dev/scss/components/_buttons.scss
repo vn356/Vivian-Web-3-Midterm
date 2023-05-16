@@ -20,9 +20,9 @@
     padding: 16px 16px;
     margin-top: 16px;
     margin-bottom: 16px;
-    background-color: #F8EDE3;
-    color: #2B3A55;
-    width: 90%;
+    background-color: $white2;
+    color: $blue;
+   
 }
 
 .icon{
@@ -40,4 +40,9 @@
 .pn{
     width: 150px;
     height: 150px;
+}
+
+.button:hover {
+    background-color: $gray;
+    color: $white;
 }

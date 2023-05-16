@@ -353,15 +353,20 @@
 
         .swim{
             grid-area: ce1;
+            height: auto;
         }
 
         .three{
             grid-area: ce2;
+            height: 570px;
         }
         
         .four{
             grid-area: ce3;
             display: initial;
+            height: 500px;
+           
+
         }
   
         

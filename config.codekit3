@@ -368,6 +368,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/main\/xlpengu.jpg" : {
+      "ft" : 16384,
+      "iS" : 683649,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/main\/xlpengu.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,

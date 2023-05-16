@@ -334,7 +334,8 @@ template {
 }
 @media (min-width: 1400px) {
   .container {
-    grid-template-columns: auto 1500px auto;
+    display: grid;
+    grid-template-columns: auto 1600px auto;
     grid-template-areas: ". content .";
   }
 }
@@ -496,7 +497,6 @@ p {
   margin-bottom: 16px;
   background-color: #F8EDE3;
   color: #2B3A55;
-  width: 90%;
 }
 
 .icon {
@@ -510,6 +510,11 @@ p {
 .pn {
   width: 150px;
   height: 150px;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: #fff;
 }
 
 /* =============
@@ -605,10 +610,16 @@ textarea {
 .bottom .content {
   margin-top: 24px;
 }
+.bottom .content .signup form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: end;
+}
 .bottom .content .signup form input {
   color: #2B3A55;
   font-family: "Oxygen", sans-serif;
   font-size: 14px;
+  width: 100%;
   border: none;
 }
 .bottom .content .signup form .signup-button {
@@ -618,13 +629,12 @@ textarea {
   font-weight: bold;
   border: none;
   padding: 8px 12px 8px 12px;
-  justify-content: end;
 }
 @media (min-width: 768px) {
   .bottom {
     display: grid;
     grid-column-gap: 12px;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "m1 m2" "m3 m4" "m5 .";
   }
   .bottom .greg {
@@ -647,7 +657,7 @@ textarea {
   .bottom {
     display: grid;
     grid-column-gap: 24px;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "m1 m2" "m3 m4" "m5 .";
   }
   .bottom .greg {
@@ -669,7 +679,7 @@ textarea {
 @media (min-width: 1200px) {
   .bottom {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "m1 m2 m4" "m3 . ." "m5 . .";
   }
   .bottom .greg {
@@ -689,10 +699,6 @@ textarea {
   }
 }
 @media (min-width: 1400px) {
-  .bottom {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
   .bottom .popular-penguin {
     margin-left: 80px;
   }
@@ -740,7 +746,7 @@ textarea {
 @media (min-width: 768px) {
   .articles ul {
     display: grid;
-    grid-template-columns: 4 repeat 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "a1 a1 a2 a2" "a3 a3 a4 a4" ". a5 a5 .";
   }
   .articles ul .tall {
@@ -1033,13 +1039,16 @@ textarea {
   }
   .center .swim {
     grid-area: ce1;
+    height: auto;
   }
   .center .three {
     grid-area: ce2;
+    height: 570px;
   }
   .center .four {
     grid-area: ce3;
     display: initial;
+    height: 500px;
   }
 }
 
@@ -1091,7 +1100,7 @@ textarea {
 @media (min-width: 768px) {
   .middle {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "f1 f1 f2 f2";
   }
   .middle .facts {
@@ -1107,7 +1116,7 @@ textarea {
 @media (min-width: 992px) {
   .middle {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "f1 f1 f2 f2";
   }
   .middle .facts {
@@ -1120,7 +1129,7 @@ textarea {
 @media (min-width: 1200px) {
   .middle {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "f1 f1 f2 f2";
   }
   .middle .facts {
@@ -1141,7 +1150,7 @@ textarea {
 
 .bars {
   display: grid;
-  grid-template-columns: repeat(2 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "l1 l2" "l3 l2";
   padding: 16px;
 }
@@ -1155,7 +1164,8 @@ textarea {
 .bars .buttons {
   grid-area: l3;
   width: fit-content;
-  padding: 16px;
+  padding: 8px;
+  height: 20px;
 }
 @media (min-width: 768px) {
   .bars {

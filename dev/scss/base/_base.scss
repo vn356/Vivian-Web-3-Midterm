@@ -14,8 +14,11 @@
      ". content ."
     ;
 
+ 
+
     @include xxl{
-        grid-template-columns: auto 1500px auto;
+        display:grid;
+        grid-template-columns: auto 1600px auto;
         grid-template-areas: 
          ". content ."
 

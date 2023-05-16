@@ -53,7 +53,7 @@
 
         @include md{
             display: grid;
-            grid-template-columns: repeat(4 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
             "f1 f1 f2 f2"
             ;
@@ -78,7 +78,7 @@
 
         @include lg{
             display: grid;
-            grid-template-columns: repeat(4 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
             "f1 f1 f2 f2"
             ;
@@ -96,7 +96,7 @@
 
         @include xl{
             display: grid;
-            grid-template-columns: repeat(4 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
             "f1 f1 f2 f2"
             ;
@@ -128,7 +128,7 @@
 
 .bars{
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "l1 l2"
     "l3 l2";
@@ -141,11 +141,14 @@
         grid-area: l2;
         justify-self: end;
     }
-
+    
     .buttons{
         grid-area: l3;
         width: fit-content;
-        padding: 16px;
+        padding: 8px;
+        height: 20px;
+ 
+        
 
     }
   
@@ -170,4 +173,6 @@
         margin-bottom: 48px;
     }
 }
+
+
 

@@ -50,7 +50,7 @@
 
         @include md{
             display: grid;
-            grid-template-columns: (4 repeat 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
             "a1 a1 a2 a2"
             "a3 a3 a4 a4"
